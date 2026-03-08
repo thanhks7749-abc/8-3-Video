@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-cursive: "Dancing Script", cursive;
+  --font-serif: "Playfair Display", serif;
+}
+
+body {
+  background-color: #fff0f5;
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+@keyframes subtlePulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 35px rgba(255, 51, 133, 0.5); }
+  50% { transform: scale(1.03); box-shadow: 0 0 65px rgba(255, 51, 133, 0.8); }
+}
+
+.profile-pulse {
+  animation: subtlePulse 3s ease-in-out infinite;
+}
